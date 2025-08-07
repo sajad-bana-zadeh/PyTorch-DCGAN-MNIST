@@ -41,6 +41,9 @@ Here's a detailed explanation step by step, contrasting DCGAN with the basic GAN
 
 5. **How DCGAN Works Step by Step:**
 
+    ![Diagram](images/Architecture-DCGAN.png)
+
+   
    - **Input:** A random noise vector $$ z $$ (e.g., length 100) sampled from a normal or uniform distribution.  
    - **Generator:**  
      - Takes $$ z $$ and passes it through successive ConvTranspose2d layers.  
@@ -58,7 +61,7 @@ Here's a detailed explanation step by step, contrasting DCGAN with the basic GAN
      - Both networks update their weights alternately through backpropagation.  
      - Over time, the generator improves in producing realistic images; the discriminator adapts to detect finer distinctions.
 
-6. **Benefits of DCGAN Over Basic GAN:**  
+7. **Benefits of DCGAN Over Basic GAN:**  
 
    - Convolutional layers exploit spatial structure of image data, leading to better feature learning and image quality.  
    - Batch normalization stabilizes training by reducing internal covariate shift.  
